@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tertanam - Jangan Nonton Nanti Dosa</title>
+    <style>
+        /* Gaya CSS internal untuk file video-embed.html */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #343a40; /* Latar belakang gelap */
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Memastikan halaman penuh */
+        }
+
+        .video-wrapper {
+            max-width: 400px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            /* Untuk memastikan iframe video memiliki rasio vertikal (Shorts) */
+        }
+
+        .video-container iframe {
+            width: 315px; 
+            height: 560px;
+            border: 5px solid #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        }
+        
+        @media (max-width: 480px) {
+            .video-container iframe {
+                width: 100%;
+                height: 80vh; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-wrapper">
+        <h1>Video: Jangan Nonton Nanti Dosa | SOVIE PROJECT</h1>
+        <div class="video-container">
+            <iframe 
+                width="315" 
+                height="560" 
+                src="https://www.youtube.com/embed/KIm4jVe3xpQ" 
+                title="Jangan Nonton Nanti Dosa | Video Lucu Bikin Ngakak" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p>Video ini adalah contoh penempatan konten eksternal dalam tugas web.</p>
+    </div>
+</body>
+</html>
